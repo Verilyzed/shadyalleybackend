@@ -8,9 +8,10 @@ app = FastAPI()
 MAINTENANCE = False
 VERSION = "0.1.24"
 PRICE_WEED = 10
-PRICE_CRACK = 15
-PRICE_ECSTASY = 20
-PRICE_HEROINE = 25
+PRICE_ECSTASY = 15
+PRICE_CRACK = 20
+PRICE_COCAINE = 25
+PRICE_HEROINE = 30
 PRICE_LSD = 5
 
 
@@ -21,8 +22,9 @@ async def data():
         "version": VERSION,
         "prices": {
             "weed": PRICE_WEED,
-            "crack": PRICE_CRACK,
             "ecstasy": PRICE_ECSTASY,
+            "cocaine": PRICE_COCAINE,
+            "crack": PRICE_CRACK,
             "heroine": PRICE_HEROINE,
             "lsd": PRICE_LSD
         },
